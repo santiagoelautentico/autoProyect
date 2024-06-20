@@ -2,9 +2,6 @@ import { ModeloAuto } from "../database/models/ModeloAuto.js";
 
 export const putAuto = (req, res, next) => {
   const idAuto = req.params.id;
-  // const nombre = req.body.nombre;
-  // const tipo = req.body.tipo;
-  // const raza = req.body.raza;
   const {
     marca,
     modelo,
@@ -19,9 +16,6 @@ export const putAuto = (req, res, next) => {
     otrosDatos,
   } = req.body;
   const datosNuevos = {};
-  // if(nombre) datosNuevos.nombre = nombre;
-  // if(tipo) datosNuevos.tipo = tipo;
-  // if(raza) datosNuevos.raza = raza;
   if (marca) datosNuevos.marca = marca;
   if (modelo) datosNuevos.modelo = modelo;
   if (año) datosNuevos.año = año;
