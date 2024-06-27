@@ -1,2 +1,0 @@
-# autoProyect
-backend del proyecto
