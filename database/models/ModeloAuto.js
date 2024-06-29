@@ -21,3 +21,6 @@ const schemaAuto = new Schema({
 });
 
 export const ModeloAuto = model("Auto", schemaAuto);
+
+
+//algo
