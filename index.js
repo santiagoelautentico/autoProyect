@@ -13,7 +13,6 @@ import { loginUsuario } from "./controllers/loginUsuario.js";
 import { controlarSesion } from "./middlewares/controlarSesion.js";
 import { getAutoById } from "./controllers/getAutoById.js";
 
-
 const app = express();
 const port = 3001;
 app.use(express.json());

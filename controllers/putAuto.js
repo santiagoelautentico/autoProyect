@@ -12,8 +12,13 @@ export const putAuto = (req, res, next) => {
     planDePago,
     motor,
     usado,
-    plataformaMaxima,
-    otrosDatos,
+    puertas,
+    Kilometros,
+    NumeroDePlazas,
+    PapelesAlDia,
+    tipoDeCaja,
+    combustible,
+    acercaDelAuto,
   } = req.body;
   const datosNuevos = {};
   if (marca) datosNuevos.marca = marca;
@@ -25,8 +30,13 @@ export const putAuto = (req, res, next) => {
   if (planDePago) datosNuevos.planDePago = planDePago;
   if (motor) datosNuevos.motor = motor;
   if (usado) datosNuevos.usado = usado;
-  if (plataformaMaxima) datosNuevos.plataformaMaxima = plataformaMaxima;
-  if (otrosDatos) datosNuevos.otrosDatos = otrosDatos;
+  if (puertas) datosNuevos.puertas = puertas;
+  if (Kilometros) datosNuevos.Kilometros = Kilometros;
+  if (NumeroDePlazas) datosNuevos.NumeroDePlazas = NumeroDePlazas;
+  if (PapelesAlDia) datosNuevos.PapelesAlDia = PapelesAlDia;
+  if (tipoDeCaja) datosNuevos.vehiculo = tipoDeCaja;
+  if (combustible) datosNuevos.combustible = combustible;
+  if (acercaDelAuto) datosNuevos.acercaDelAuto = acercaDelAuto;
 
   ModeloAuto.updateOne({ id: idAuto }, datosNuevos)
     .then((data) => {

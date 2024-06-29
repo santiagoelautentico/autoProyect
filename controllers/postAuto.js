@@ -12,8 +12,13 @@ export const postAuto = async (req, res, next) => {
     planDePago,
     motor,
     usado,
-    plataformaMaxima,
-    otrosDatos,
+    puertas,
+    Kilometros,
+    NumeroDePlazas,
+    PapelesAlDia,
+    tipoDeCaja,
+    combustible,
+    acercaDelAuto,
   } = req.body;
   const nuevoAuto = new ModeloAuto();
   nuevoAuto.id = await obtenerProximoId(ModeloAuto);
@@ -26,8 +31,13 @@ export const postAuto = async (req, res, next) => {
   nuevoAuto.planDePago = planDePago;
   nuevoAuto.motor = motor;
   nuevoAuto.usado = usado;
-  nuevoAuto.plataformaMaxima = plataformaMaxima;
-  nuevoAuto.otrosDatos = otrosDatos;
+  nuevoAuto.puertas = puertas;
+  nuevoAuto.Kilometros = Kilometros;
+  nuevoAuto.NumeroDePlazas = NumeroDePlazas;
+  nuevoAuto.PapelesAlDia = PapelesAlDia;
+  nuevoAuto.tipoDeCaja = tipoDeCaja;
+  nuevoAuto.combustible = combustible;
+  nuevoAuto.acercaDelAuto = acercaDelAuto;
 
   nuevoAuto.save()
     .then((data) => {
