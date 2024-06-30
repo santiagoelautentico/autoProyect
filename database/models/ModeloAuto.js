@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const schemaAuto = new mongoose.Schema({
+const schemaAuto = new Schema({
   id: { type: Number, unique: true },
   marca: String,
   modelo: String,
@@ -20,7 +20,7 @@ const schemaAuto = new mongoose.Schema({
   acercaDelAuto: String,
 });
 
-export const ModeloAuto = mongoose.model("Auto", schemaAuto);
+export const ModeloAuto = model("Auto", schemaAuto);
 
 
 //algo
