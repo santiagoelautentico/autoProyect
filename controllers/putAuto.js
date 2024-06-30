@@ -11,7 +11,7 @@ export const putAuto = (req, res, next) => {
     imagen,
     planDePago,
     motor,
-    usado,
+    condicion,
     puertas,
     Kilometros,
     NumeroDePlazas,
@@ -29,7 +29,7 @@ export const putAuto = (req, res, next) => {
   if (imagen) datosNuevos.imagen = imagen;
   if (planDePago) datosNuevos.planDePago = planDePago;
   if (motor) datosNuevos.motor = motor;
-  if (usado) datosNuevos.usado = usado;
+  if (condicion) datosNuevos.condicion = condicion;
   if (puertas) datosNuevos.puertas = puertas;
   if (Kilometros) datosNuevos.Kilometros = Kilometros;
   if (NumeroDePlazas) datosNuevos.NumeroDePlazas = NumeroDePlazas;

@@ -4,7 +4,7 @@ const schemaAuto = new Schema({
   id: { type: Number, unique: true },
   marca: String,
   modelo: String,
-  usado: Boolean,
+  condicion: String,
   año: Number,
   color: String,
   precio: Number,

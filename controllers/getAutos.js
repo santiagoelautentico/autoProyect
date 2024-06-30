@@ -4,7 +4,7 @@ import { formatearFiltrosDB } from "../utils/functions.js"
 export const getAutos = (req, res, next) => {
     const filtroModelo = formatearFiltrosDB(req.query.modelo)
     const filtroMarca = formatearFiltrosDB(req.query.marca)
-    const filtroUsado = formatearFiltrosDB(req.query.usado)
+    const filtroCondicion = formatearFiltrosDB(req.query.condicion)
     const filtroMotor = formatearFiltrosDB(req.query.motor)
     const filtroKilometros = formatearFiltrosDB(req.query.kilometros)
     const filtroColor = formatearFiltrosDB(req.query.color);
@@ -17,7 +17,7 @@ export const getAutos = (req, res, next) => {
     const filtros = {}
     if (filtroModelo) filtros.modelo = filtroModelo;
     if (filtroMarca) filtros.marca = filtroMarca;
-    if (filtroUsado) filtros.usado = filtroUsado;
+    if (filtroCondicion) filtros.condicion = filtroCondicion;
     if (filtroMotor) filtros.motor = filtroMotor;
     if (filtroKilometros) filtros.kilometros = filtroKilometros;
     if (filtroColor) filtros.color = filtroColor;

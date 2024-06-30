@@ -11,7 +11,7 @@ export const postAuto = async (req, res, next) => {
     imagen,
     planDePago,
     motor,
-    usado,
+    condicion,
     puertas,
     Kilometros,
     NumeroDePlazas,
@@ -30,7 +30,7 @@ export const postAuto = async (req, res, next) => {
   nuevoAuto.imagen = imagen;
   nuevoAuto.planDePago = planDePago;
   nuevoAuto.motor = motor;
-  nuevoAuto.usado = usado;
+  nuevoAuto.condicion = condicion;
   nuevoAuto.puertas = puertas;
   nuevoAuto.Kilometros = Kilometros;
   nuevoAuto.NumeroDePlazas = NumeroDePlazas;
