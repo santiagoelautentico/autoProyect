@@ -1,26 +1,26 @@
 import { Schema, model } from "mongoose";
 
-const schemaAuto = new Schema({
+const schemaAuto = new mongoose.Schema({
   id: { type: Number, unique: true },
   marca: String,
   modelo: String,
-  condicion: String,
-  año: {type: Number},
+  usado: Boolean,
+  año: Number,
   color: String,
-  precio: {type: Number},
+  precio: Number,
   imagen: String,
   planDePago: String,
   motor: String,
-  puertas: {type: Number},
-  Kilometros: {type: Number},
-  NumeroDePlazas: {type: Number},
+  puertas: Number,
+  Kilometros: Number,
+  NumeroDePlazas: Number,
   PapelesAlDia: Boolean,
   tipoDeCaja: String,
   combustible: String,
   acercaDelAuto: String,
 });
 
-export const ModeloAuto = model("Auto", schemaAuto);
+export const ModeloAuto = mongoose.model("Auto", schemaAuto);
 
 
 //algo
