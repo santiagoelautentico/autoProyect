@@ -5,6 +5,7 @@ export const putAuto = (req, res, next) => {
   const {
     marca,
     modelo,
+    condicion,
     año,
     color,
     precio,
@@ -15,7 +16,6 @@ export const putAuto = (req, res, next) => {
     imagen5,
     planDePago,
     motor,
-    condicion,
     puertas,
     Kilometros,
     NumeroDePlazas,
@@ -27,6 +27,7 @@ export const putAuto = (req, res, next) => {
   const datosNuevos = {};
   if (marca) datosNuevos.marca = marca;
   if (modelo) datosNuevos.modelo = modelo;
+  if (condicion) datosNuevos.condicion = condicion;
   if (año) datosNuevos.año = año;
   if (color) datosNuevos.color = color;
   if (precio) datosNuevos.precio = precio;
@@ -37,7 +38,6 @@ export const putAuto = (req, res, next) => {
   if (imagen5) datosNuevos.imagen5 = imagen5;
   if (planDePago) datosNuevos.planDePago = planDePago;
   if (motor) datosNuevos.motor = motor;
-  if (condicion) datosNuevos.condicion = condicion;
   if (puertas) datosNuevos.puertas = puertas;
   if (Kilometros) datosNuevos.Kilometros = Kilometros;
   if (NumeroDePlazas) datosNuevos.NumeroDePlazas = NumeroDePlazas;
