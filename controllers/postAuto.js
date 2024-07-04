@@ -1,17 +1,16 @@
 import { ModeloAuto } from "../database/models/ModeloAuto.js";
 import { obtenerProximoId } from "../utils/functions.js";
-
 export const postAuto = async (req, res, next) => {
   const {
     marca,
     modelo,
+    condicion,
     año,
     color,
     precio,
     imagen,
     planDePago,
     motor,
-    condicion,
     puertas,
     Kilometros,
     NumeroDePlazas,
@@ -24,13 +23,13 @@ export const postAuto = async (req, res, next) => {
   nuevoAuto.id = await obtenerProximoId(ModeloAuto);
   nuevoAuto.marca = marca;
   nuevoAuto.modelo = modelo;
+  nuevoAuto.condicion = condicion;
   nuevoAuto.año = año;
   nuevoAuto.color = color;
   nuevoAuto.precio = precio;
   nuevoAuto.imagen = imagen;
   nuevoAuto.planDePago = planDePago;
   nuevoAuto.motor = motor;
-  nuevoAuto.condicion = condicion;
   nuevoAuto.puertas = puertas;
   nuevoAuto.Kilometros = Kilometros;
   nuevoAuto.NumeroDePlazas = NumeroDePlazas;
@@ -39,7 +38,8 @@ export const postAuto = async (req, res, next) => {
   nuevoAuto.combustible = combustible;
   nuevoAuto.acercaDelAuto = acercaDelAuto;
 
-  nuevoAuto.save()
+  nuevoAuto
+    .save()
     .then((data) => {
       res.json(data);
     })
