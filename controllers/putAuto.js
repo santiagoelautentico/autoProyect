@@ -9,6 +9,10 @@ export const putAuto = (req, res, next) => {
     color,
     precio,
     imagen,
+    imagen2,
+    imagen3,
+    imagen4,
+    imagen5,
     planDePago,
     motor,
     condicion,
@@ -27,6 +31,10 @@ export const putAuto = (req, res, next) => {
   if (color) datosNuevos.color = color;
   if (precio) datosNuevos.precio = precio;
   if (imagen) datosNuevos.imagen = imagen;
+  if (imagen2) datosNuevos.imagen2 = imagen2;
+  if (imagen3) datosNuevos.imagen3 = imagen3;
+  if (imagen4) datosNuevos.imagen4 = imagen4;
+  if (imagen5) datosNuevos.imagen5 = imagen5;
   if (planDePago) datosNuevos.planDePago = planDePago;
   if (motor) datosNuevos.motor = motor;
   if (condicion) datosNuevos.condicion = condicion;

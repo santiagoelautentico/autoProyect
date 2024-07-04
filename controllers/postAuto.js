@@ -9,6 +9,10 @@ export const postAuto = async (req, res, next) => {
     color,
     precio,
     imagen,
+    imagen2,
+    imagen3,
+    imagen4,
+    imagen5,
     planDePago,
     motor,
     puertas,
@@ -28,6 +32,10 @@ export const postAuto = async (req, res, next) => {
   nuevoAuto.color = color;
   nuevoAuto.precio = precio;
   nuevoAuto.imagen = imagen;
+  nuevoAuto.imagen2 = imagen2;
+  nuevoAuto.imagen3 = imagen3;
+  nuevoAuto.imagen4 = imagen4;
+  nuevoAuto.imagen5 = imagen5;
   nuevoAuto.planDePago = planDePago;
   nuevoAuto.motor = motor;
   nuevoAuto.puertas = puertas;
