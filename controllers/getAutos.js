@@ -5,8 +5,8 @@ export const getAutos = (req, res, next) => {
     const filtroModelo = formatearFiltrosDB(req.query.modelo)
     const filtroCondicion = formatearFiltrosDB(req.query.condicion)
     const filtroAño = formatearFiltrosDB(req.query.año);
-    const filtroColor = formatearFiltrosDB(req.query.color);
     const filtroPrecio = formatearFiltrosDB(req.query.precio);
+    const filtroColor = formatearFiltrosDB(req.query.color);
     const filtroMotor = formatearFiltrosDB(req.query.motor)
     const filtroPuertas = formatearFiltrosDB(req.query.puertas)
     const filtroKilometros = formatearFiltrosDB(req.query.kilometros)
